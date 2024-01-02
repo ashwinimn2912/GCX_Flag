@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1123126_gcx_cust.AddNewContact</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>AddNewContact</name>
+        <script><![CDATA[var AddNewContact = Class.create();
+AddNewContact.prototype = {
+    initialize: function() {
+        this.response = new sn_tmt_core.BaseObject();
+        this.request = new sn_tmt_core.BaseObject();
+        this.contactSysId;
+    },
+    createCustomerContact: function(contact, accSysId) {
+        //create new contact
+        var custContact = new GlideRecord('customer_contact');
+        custContact.first_name = contact.firstName;
+        custContact.last_name = contact.lastName;
+        custContact.introduction = contact.prefix;
+        custContact.gender = contact.gender;
+        custContact.email = contact.email;
+        custContact.sn_tmt_core_external_id = contact.externalId;
+        custContact.home_phone = contact.homePhone;
+        custContact.mobile_phone = contact.mobilePhone;
+        custContact.phone = contact.businessPhone;
+        custContact.u_alternate_phone = contact.alternatePhone;
+        custContact.title = contact.title;
+        custContact.street = contact.street;
+        custContact.city = contact.city;
+        custContact.state = contact.state;
+        custContact.country = contact.countryCode;
+        custContact.zip = contact.postalCode;
+        custContact.u_written_language = contact.writtenLanguage;
+        custContact.u_spoken_language = contact.spokenLanguage;
+        custContact.account = accSysId;
+        custContact.insert();
+        this.response.contact = custContact.sys_id;
+        this.response.setValue('status', 201);
+        return this.response;
+    },
+    type: 'AddNewContact'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:17:32</sys_created_on>
+        <sys_id>fbc2f66cc36b7514cc6b98477d013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AddNewContact</sys_name>
+        <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name>sys_script_include_fbc2f66cc36b7514cc6b98477d013138</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:17:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

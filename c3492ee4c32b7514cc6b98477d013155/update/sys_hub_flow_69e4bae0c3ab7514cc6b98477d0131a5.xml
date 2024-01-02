@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>welcome_new_group_member</internal_name>
+        <label_cache>[{"name":"Created_1.current.user.name","label":"Trigger - Record Created➛Group Member Record➛User➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"1f146012-e7e5-45a2-96dd-e17b06ae1641.item.user.email","label":"2 - For Each➛Group Member Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"1f146012-e7e5-45a2-96dd-e17b06ae1641.item","label":"2 - For Each➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"3b734591-7a0e-4d4d-8f18-942cc46af2b6.Records","label":"1 - Look Up Records➛Group Member Records","reference":"sys_user_grmember","reference_display":"Group Member","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.group","label":"Trigger - Record Created➛Group Member Record➛Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"group"}]</label_cache>
+        <master_snapshot>390ab66cc3ab7514cc6b98477d013155</master_snapshot>
+        <name>Welcome New Group Member</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>5d34c302c30e3910cc6b98477d01316a</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:23:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>69e4bae0c3ab7514cc6b98477d0131a5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Welcome New Group Member</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name>sys_hub_flow_69e4bae0c3ab7514cc6b98477d0131a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sys_user_grmember">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-24 13:47:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5d34c302c30e3910cc6b98477d01316a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <table>sys_user_grmember</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>69e4bae0c3ab7514cc6b98477d0131a5</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>460ab66cc3ab7514cc6b98477d0131ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <trigger display_value="">5d34c302c30e3910cc6b98477d01316a</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN460ab66cc3ab7514cc6b98477d0131ce"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN0ff9366cc3ab7514cc6b98477d01310f"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Welcome New Group Member">69e4bae0c3ab7514cc6b98477d0131a5</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:50</sys_created_on>
+        <sys_id>0ff9366cc3ab7514cc6b98477d01310f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0ff9366cc3ab7514cc6b98477d01310f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0ff9366cc3ab7514cc6b98477d01310f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:50</sys_created_on>
+        <sys_id>4ff9366cc3ab7514cc6b98477d013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:50</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0ff9366cc3ab7514cc6b98477d01310f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:50</sys_created_on>
+        <sys_id>87f9366cc3ab7514cc6b98477d013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:50</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT INf5e4bae0c3ab7514cc6b98477d0131a7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>69e4bae0c3ab7514cc6b98477d0131a5</id>
+        <name>Welcome New Group Member</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:23:37</sys_created_on>
+        <sys_id>f5e4bae0c3ab7514cc6b98477d0131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:23:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f5e4bae0c3ab7514cc6b98477d0131a7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN43f9366cc3ab7514cc6b98477d013106,43f9366cc3ab7514cc6b98477d01310b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Welcome New Group Member">69e4bae0c3ab7514cc6b98477d0131a5</model>
+        <model_id>69e4bae0c3ab7514cc6b98477d0131a5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_69e4bae0c3ab7514cc6b98477d0131a5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:50</sys_created_on>
+        <sys_id>43f9366cc3ab7514cc6b98477d013106</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Welcome New Group Member">69e4bae0c3ab7514cc6b98477d0131a5</model>
+        <model_id>69e4bae0c3ab7514cc6b98477d0131a5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_69e4bae0c3ab7514cc6b98477d0131a5</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:50</sys_created_on>
+        <sys_id>43f9366cc3ab7514cc6b98477d01310b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN5bf9366cc3ab7514cc6b98477d013124,97f9366cc3ab7514cc6b98477d013132"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Welcome New Group Member">69e4bae0c3ab7514cc6b98477d0131a5</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>5bf9366cc3ab7514cc6b98477d013124</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <ui_id>3b734591-7a0e-4d4d-8f18-942cc46af2b6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5bf9366cc3ab7514cc6b98477d013124"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5bf9366cc3ab7514cc6b98477d013124</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>1bf9366cc3ab7514cc6b98477d013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5bf9366cc3ab7514cc6b98477d013124"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>5bf9366cc3ab7514cc6b98477d013124</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>dff9366cc3ab7514cc6b98477d013126</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>group={{Created_1.current.group}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>5bf9366cc3ab7514cc6b98477d013124</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>97f9366cc3ab7514cc6b98477d013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5bf9366cc3ab7514cc6b98477d013124"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5bf9366cc3ab7514cc6b98477d013124"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Welcome New Group Member">69e4bae0c3ab7514cc6b98477d0131a5</flow>
+        <order>3</order>
+        <parent_ui_id>1f146012-e7e5-45a2-96dd-e17b06ae1641</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>97f9366cc3ab7514cc6b98477d013132</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <ui_id>ee43fa1f-42ed-4259-814f-c80edcdde778</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=97f9366cc3ab7514cc6b98477d013132"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>97f9366cc3ab7514cc6b98477d013132</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>13f9366cc3ab7514cc6b98477d013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
+        <value>&lt;p&gt;Warm Welcome&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=97f9366cc3ab7514cc6b98477d013132"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>97f9366cc3ab7514cc6b98477d013132</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>dbf9366cc3ab7514cc6b98477d013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>97f9366cc3ab7514cc6b98477d013132</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>9ff9366cc3ab7514cc6b98477d013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Please Welcome {{Created_1.current.user.name}}
+to the Group</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>97f9366cc3ab7514cc6b98477d013132</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>1bf9366cc3ab7514cc6b98477d013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{1f146012-e7e5-45a2-96dd-e17b06ae1641.item.user.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=97f9366cc3ab7514cc6b98477d013132"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=97f9366cc3ab7514cc6b98477d013132"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT INdbf9366cc3ab7514cc6b98477d013128"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9ff9366cc3ab7514cc6b98477d013127</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Welcome New Group Member">69e4bae0c3ab7514cc6b98477d0131a5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>dbf9366cc3ab7514cc6b98477d013128</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <ui_id>1f146012-e7e5-45a2-96dd-e17b06ae1641</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=dbf9366cc3ab7514cc6b98477d013128"/>
+    <sys_element_mapping action="delete_multiple" query="id=dbf9366cc3ab7514cc6b98477d013128"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>dbf9366cc3ab7514cc6b98477d013128</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:51</sys_created_on>
+        <sys_id>d3f9366cc3ab7514cc6b98477d01312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{3b734591-7a0e-4d4d-8f18-942cc46af2b6.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=dbf9366cc3ab7514cc6b98477d013128"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dbf9366cc3ab7514cc6b98477d013128"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN87f9366cc3ab7514cc6b98477d01310d,8ff9366cc3ab7514cc6b98477d013109"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_69e4bae0c3ab7514cc6b98477d0131a5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:50</sys_created_on>
+        <sys_id>87f9366cc3ab7514cc6b98477d01310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_69e4bae0c3ab7514cc6b98477d0131a5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:45:50</sys_created_on>
+        <sys_id>8ff9366cc3ab7514cc6b98477d013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:45:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN8e0ab66cc3ab7514cc6b98477d0131ce"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>69e4bae0c3ab7514cc6b98477d0131a5</plan_id>
+        <snapshot>390ab66cc3ab7514cc6b98477d013155</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e0ab66cc3ab7514cc6b98477d0131ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <trigger display_value="">5d34c302c30e3910cc6b98477d01316a</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=69e4bae0c3ab7514cc6b98477d0131a5"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>welcome_new_group_member</internal_name>
+        <label_cache>[{"name":"Created_1.current.user.name","label":"Trigger - Record Created➛Group Member Record➛User➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"1f146012-e7e5-45a2-96dd-e17b06ae1641.item.user.email","label":"2 - For Each➛Group Member Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"1f146012-e7e5-45a2-96dd-e17b06ae1641.item","label":"2 - For Each➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"3b734591-7a0e-4d4d-8f18-942cc46af2b6.Records","label":"1 - Look Up Records➛Group Member Records","reference":"sys_user_grmember","reference_display":"Group Member","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.group","label":"Trigger - Record Created➛Group Member Record➛Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"group"}]</label_cache>
+        <master>true</master>
+        <name>Welcome New Group Member</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Welcome New Group Member">69e4bae0c3ab7514cc6b98477d0131a5</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>390ab66cc3ab7514cc6b98477d013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:01</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_variable_value action="delete_multiple" query="document_key=390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=390ab66cc3ab7514cc6b98477d013155^sys_idNOT INc20ab66cc3ab7514cc6b98477d01319e"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Welcome New Group Member">390ab66cc3ab7514cc6b98477d013155</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>c20ab66cc3ab7514cc6b98477d01319e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c20ab66cc3ab7514cc6b98477d01319e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c20ab66cc3ab7514cc6b98477d01319e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>0a0ab66cc3ab7514cc6b98477d01319f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c20ab66cc3ab7514cc6b98477d01319e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>ca0ab66cc3ab7514cc6b98477d01319f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=390ab66cc3ab7514cc6b98477d013155^sys_idNOT INb90ab66cc3ab7514cc6b98477d013156"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>390ab66cc3ab7514cc6b98477d013155</id>
+        <name>Welcome New Group Member</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:01</sys_created_on>
+        <sys_id>b90ab66cc3ab7514cc6b98477d013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b90ab66cc3ab7514cc6b98477d013156"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=390ab66cc3ab7514cc6b98477d013155^sys_idNOT IN310ab66cc3ab7514cc6b98477d013158,b50ab66cc3ab7514cc6b98477d01317b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Welcome New Group Member">390ab66cc3ab7514cc6b98477d013155</model>
+        <model_id>390ab66cc3ab7514cc6b98477d013155</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_390ab66cc3ab7514cc6b98477d013155</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:01</sys_created_on>
+        <sys_id>310ab66cc3ab7514cc6b98477d013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Welcome New Group Member">390ab66cc3ab7514cc6b98477d013155</model>
+        <model_id>390ab66cc3ab7514cc6b98477d013155</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_390ab66cc3ab7514cc6b98477d013155</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>b50ab66cc3ab7514cc6b98477d01317b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=390ab66cc3ab7514cc6b98477d013155^sys_idNOT IN0e0ab66cc3ab7514cc6b98477d01319b,8a0ab66cc3ab7514cc6b98477d013191"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Welcome New Group Member">390ab66cc3ab7514cc6b98477d013155</flow>
+        <order>3</order>
+        <parent_ui_id>1f146012-e7e5-45a2-96dd-e17b06ae1641</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>0e0ab66cc3ab7514cc6b98477d01319b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <ui_id>ee43fa1f-42ed-4259-814f-c80edcdde778</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0e0ab66cc3ab7514cc6b98477d01319b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0e0ab66cc3ab7514cc6b98477d01319b</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>ce0ab66cc3ab7514cc6b98477d01319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <value>&lt;p&gt;Warm Welcome&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0e0ab66cc3ab7514cc6b98477d01319b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>0e0ab66cc3ab7514cc6b98477d01319b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>8a0ab66cc3ab7514cc6b98477d01319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>0e0ab66cc3ab7514cc6b98477d01319b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>4e0ab66cc3ab7514cc6b98477d01319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Please Welcome {{Created_1.current.user.name}}
+to the Group</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>0e0ab66cc3ab7514cc6b98477d01319b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>c60ab66cc3ab7514cc6b98477d01319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{1f146012-e7e5-45a2-96dd-e17b06ae1641.item.user.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0e0ab66cc3ab7514cc6b98477d01319b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0e0ab66cc3ab7514cc6b98477d01319b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Welcome New Group Member">390ab66cc3ab7514cc6b98477d013155</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>8a0ab66cc3ab7514cc6b98477d013191</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <ui_id>3b734591-7a0e-4d4d-8f18-942cc46af2b6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8a0ab66cc3ab7514cc6b98477d013191"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8a0ab66cc3ab7514cc6b98477d013191</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>060ab66cc3ab7514cc6b98477d013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8a0ab66cc3ab7514cc6b98477d013191"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>8a0ab66cc3ab7514cc6b98477d013191</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>ce0ab66cc3ab7514cc6b98477d013192</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>group={{Created_1.current.group}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>8a0ab66cc3ab7514cc6b98477d013191</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>820ab66cc3ab7514cc6b98477d013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8a0ab66cc3ab7514cc6b98477d013191"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8a0ab66cc3ab7514cc6b98477d013191"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=390ab66cc3ab7514cc6b98477d013155^sys_idNOT INf90ab66cc3ab7514cc6b98477d013186"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9ff9366cc3ab7514cc6b98477d013127</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Welcome New Group Member">390ab66cc3ab7514cc6b98477d013155</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>f90ab66cc3ab7514cc6b98477d013186</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <ui_id>1f146012-e7e5-45a2-96dd-e17b06ae1641</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f90ab66cc3ab7514cc6b98477d013186"/>
+    <sys_element_mapping action="delete_multiple" query="id=f90ab66cc3ab7514cc6b98477d013186"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>f90ab66cc3ab7514cc6b98477d013186</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>ca0ab66cc3ab7514cc6b98477d013189</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{3b734591-7a0e-4d4d-8f18-942cc46af2b6.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f90ab66cc3ab7514cc6b98477d013186"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f90ab66cc3ab7514cc6b98477d013186"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_390ab66cc3ab7514cc6b98477d013155^sys_idNOT IN3d0ab66cc3ab7514cc6b98477d01317f,7d0ab66cc3ab7514cc6b98477d013177"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_390ab66cc3ab7514cc6b98477d013155</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>3d0ab66cc3ab7514cc6b98477d01317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_390ab66cc3ab7514cc6b98477d013155</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
+        <sys_id>7d0ab66cc3ab7514cc6b98477d013177</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_390ab66cc3ab7514cc6b98477d013155"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>69e4bae0c3ab7514cc6b98477d0131a5</sys_id>
+        <latest_snapshot>390ab66cc3ab7514cc6b98477d013155</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+</record_update>

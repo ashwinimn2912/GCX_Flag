@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="New Button (Contact)">63d9226cc32b7514cc6b98477d0131b7</button>
+        <item_parameter display_value="Contact calendar_integration">e3d9226cc32b7514cc6b98477d0131b2</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 09:35:25</sys_created_on>
+        <sys_id>63d9226cc32b7514cc6b98477d0131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e3d9226cc32b7514cc6b98477d0131b2</sys_name>
+        <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_63d9226cc32b7514cc6b98477d0131bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 09:35:25</sys_updated_on>
+        <ui_parameter display_value="Calendar integration">a3d9226cc32b7514cc6b98477d0131ba</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Edit Button (Location)">f3d9626cc32b7514cc6b98477d013152</button>
+        <item_parameter display_value="Location contact">77d9626cc32b7514cc6b98477d01314d</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 09:35:26</sys_created_on>
+        <sys_id>fbd9626cc32b7514cc6b98477d01315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>77d9626cc32b7514cc6b98477d01314d</sys_name>
+        <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_fbd9626cc32b7514cc6b98477d01315e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 09:35:26</sys_updated_on>
+        <ui_parameter display_value="Contact">77d9626cc32b7514cc6b98477d013155</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>
