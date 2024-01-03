@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>69e4bae0c3ab7514cc6b98477d0131a5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Welcome New Group Member</sys_name>
         <sys_overrides/>
         <sys_package display_value="GCX Custom App" source="x_1123126_gcx_cust">c3492ee4c32b7514cc6b98477d013155</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_update_name>sys_hub_flow_69e4bae0c3ab7514cc6b98477d0131a5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:07</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=69e4bae0c3ab7514cc6b98477d0131a5"/>
@@ -74,14 +74,14 @@
         <identifier>69e4bae0c3ab7514cc6b98477d0131a5</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-01-02 10:46:02</sys_created_on>
-        <sys_id>460ab66cc3ab7514cc6b98477d0131ce</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2024-01-03 09:09:06</sys_created_on>
+        <sys_id>7f6de7f8c3aff514cc6b98477d013116</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:06</sys_updated_on>
         <trigger display_value="">5d34c302c30e3910cc6b98477d01316a</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN460ab66cc3ab7514cc6b98477d0131ce"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN7f6de7f8c3aff514cc6b98477d013116"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=69e4bae0c3ab7514cc6b98477d0131a5^sys_idNOT IN0ff9366cc3ab7514cc6b98477d01310f"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -92,10 +92,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:45:50</sys_created_on>
         <sys_id>0ff9366cc3ab7514cc6b98477d01310f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:06</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -208,14 +208,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:45:50</sys_created_on>
         <sys_id>43f9366cc3ab7514cc6b98477d013106</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -291,14 +291,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:45:50</sys_created_on>
         <sys_id>43f9366cc3ab7514cc6b98477d01310b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -328,10 +328,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:45:51</sys_created_on>
         <sys_id>5bf9366cc3ab7514cc6b98477d013124</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:07</sys_updated_on>
         <ui_id>3b734591-7a0e-4d4d-8f18-942cc46af2b6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5bf9366cc3ab7514cc6b98477d013124"/>
@@ -390,10 +390,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:45:51</sys_created_on>
         <sys_id>97f9366cc3ab7514cc6b98477d013132</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:07</sys_updated_on>
         <ui_id>ee43fa1f-42ed-4259-814f-c80edcdde778</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=97f9366cc3ab7514cc6b98477d013132"/>
@@ -405,10 +405,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:45:51</sys_created_on>
         <sys_id>13f9366cc3ab7514cc6b98477d013135</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:45:51</sys_updated_on>
-        <value>&lt;p&gt;Warm Welcome&lt;/p&gt;</value>
+        <sys_updated_on>2024-01-03 09:08:57</sys_updated_on>
+        <value>&lt;p&gt;Warm Welcome.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Regards,&lt;/p&gt;
+&lt;p&gt;Team&lt;/p&gt;</value>
         <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=97f9366cc3ab7514cc6b98477d013132"/>
@@ -475,10 +478,10 @@ to the Group</value>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:45:51</sys_created_on>
         <sys_id>dbf9366cc3ab7514cc6b98477d013128</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:07</sys_updated_on>
         <ui_id>1f146012-e7e5-45a2-96dd-e17b06ae1641</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -598,7 +601,7 @@ to the Group</value>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>390ab66cc3ab7514cc6b98477d013155</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -606,7 +609,7 @@ to the Group</value>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:01</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:06</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=390ab66cc3ab7514cc6b98477d013155"/>
@@ -621,10 +624,10 @@ to the Group</value>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:46:02</sys_created_on>
         <sys_id>c20ab66cc3ab7514cc6b98477d01319e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:03</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:06</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -678,7 +681,7 @@ to the Group</value>
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -737,14 +740,14 @@ to the Group</value>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:46:01</sys_created_on>
         <sys_id>310ab66cc3ab7514cc6b98477d013158</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:01</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -761,7 +764,7 @@ to the Group</value>
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -820,14 +823,14 @@ to the Group</value>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:46:02</sys_created_on>
         <sys_id>b50ab66cc3ab7514cc6b98477d01317b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -857,10 +860,10 @@ to the Group</value>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:46:02</sys_created_on>
         <sys_id>0e0ab66cc3ab7514cc6b98477d01319b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:06</sys_updated_on>
         <ui_id>ee43fa1f-42ed-4259-814f-c80edcdde778</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0e0ab66cc3ab7514cc6b98477d01319b"/>
@@ -872,10 +875,13 @@ to the Group</value>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:46:02</sys_created_on>
         <sys_id>ce0ab66cc3ab7514cc6b98477d01319d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
-        <value>&lt;p&gt;Warm Welcome&lt;/p&gt;</value>
+        <sys_updated_on>2024-01-03 09:09:05</sys_updated_on>
+        <value>&lt;p&gt;Warm Welcome.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Regards,&lt;/p&gt;
+&lt;p&gt;Team&lt;/p&gt;</value>
         <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=0e0ab66cc3ab7514cc6b98477d01319b"/>
@@ -932,10 +938,10 @@ to the Group</value>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:46:02</sys_created_on>
         <sys_id>8a0ab66cc3ab7514cc6b98477d013191</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:05</sys_updated_on>
         <ui_id>3b734591-7a0e-4d4d-8f18-942cc46af2b6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8a0ab66cc3ab7514cc6b98477d013191"/>
@@ -1004,10 +1010,10 @@ to the Group</value>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 10:46:02</sys_created_on>
         <sys_id>f90ab66cc3ab7514cc6b98477d013186</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="GCX Custom App">c3492ee4c32b7514cc6b98477d013155</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 10:46:02</sys_updated_on>
+        <sys_updated_on>2024-01-03 09:09:06</sys_updated_on>
         <ui_id>1f146012-e7e5-45a2-96dd-e17b06ae1641</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
